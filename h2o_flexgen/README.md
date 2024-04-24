@@ -12,6 +12,8 @@ More explanation see Appendix A in [paper]().
 
 ```
 pip install -e .
+or
+pip install --use-feature=in-tree-build .
 ```
 
 ## Example
@@ -19,6 +21,8 @@ pip install -e .
 ```
 cd flexgen
 python flex_opt.py --gpu-batch-size 1 --overlap false --hh-ratio 0.1 --hh-all --model facebook/opt-6.7b
+or
+python flex_opt.py --gpu-batch-size 1 --overlap false --hh-ratio 0.1 --hh-all --model /home/tangm_lab/cse12112106/weights/opt-1.3b --path /home/tangm_lab/cse12112106/weights/opt-1.3b --local
 ```
 
 ## Run Experiments
